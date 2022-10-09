@@ -8,6 +8,7 @@ class Punto:
     def __str__(self):
         return ("({},{})".format(self.x, self.y))
 
+
 p1 = Punto(2,3)
 print(p1)
     

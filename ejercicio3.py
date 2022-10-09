@@ -42,7 +42,10 @@ def modificar(lista:list):
     # Realizar una suma de todos los números que quedan.
     suma_elementos_lista = sum(lista_ordenada_pares)
     return print(f"La suma de los números que conforman la lista es: {suma_elementos_lista}")
+
+    # Añadir como primer elemento la lista de la suma realizada.
     
+
     '''
     for i in lista:
         if i not in lista_nueva:
