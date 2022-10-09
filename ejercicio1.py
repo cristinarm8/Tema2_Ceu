@@ -6,4 +6,8 @@ class Punto:
         self.y = y_inicial
     
     def __str__(self):
-        return ("({},{})".formar(self.x, self.y))
+        return ("({},{})".format(self.x, self.y))
+
+p1 = Punto(2,3)
+print(p1)
+    
