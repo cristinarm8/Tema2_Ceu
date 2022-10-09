@@ -29,7 +29,9 @@ Y el vector se representaría como la diferencia entre las coordendas del segund
 AB = (x2-x1, y2-y1) => (5-2, 5-3) => (3,2)
 Lo que en definitiva no deja de ser: 3 a la derecha y 2 arriba.
 Y con esto finalizamos este mini repaso.
+
 Ejercicio
+
 Crea una clase llamada Punto con sus dos coordenadas X e Y.
 Añade un método constructor para crear puntos fácilmente. Si no se reciben una coordenada, su valor será cero.
 Sobreescribe el método string, para que al imprimir por pantalla un punto aparezca en formato (X,Y)
@@ -42,6 +44,7 @@ Nota
 La función raíz cuadrada en Python sqrt() se debe importar del módulo math y utilizarla de la siguiente forma:
 import math
 math.sqrt(9)
+
 Crea una clase llamada Rectangulo con dos puntos (inicial y final) que formarán la diagonal del rectángulo.
 Añade un método constructor para crear ambos puntos fácilmente, si no se envían se crearán dos puntos en el origen por defecto.
 Añade al rectángulo un método llamado base que muestre la base.
@@ -49,7 +52,9 @@ Añade al rectángulo un método llamado altura que muestre la altura.
 Añade al rectángulo un método llamado area que muestre el area.
 Sugerencia
 Puedes identificar fácilmente estos valores si intentas dibujar el cuadrado a partir de su diagonal. Si andas perdido, prueba de dibujarlo en un papel, ¡seguro que lo verás mucho más claro! Además recuerda que puedes utilizar la función abs() para saber el valor absolute de un número.
+
 Experimentación
+
 Crea los puntos A(2, 3), B(5,5), C(-3, -1) y D(0,0) e imprimelos por pantalla.
 Consulta a que cuadrante pertenecen el punto A, C y D.
 Consulta los vectores AB y BA.
