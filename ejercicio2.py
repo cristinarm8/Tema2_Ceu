@@ -11,3 +11,9 @@ Un día que el viento soplaba con fuerza...
 Lo único prohibido es modificar directamente el texto.
 
 '''
+
+texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella bandolera -dijo un monje#lo que es el viento -respondió otro monje#ni las bandoleras ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
+
+caracter_eliminar = "#"
+texto = "".join(x for x in texto if x not in caracter_eliminar)
+print(texto)
