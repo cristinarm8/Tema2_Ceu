@@ -23,13 +23,19 @@ lista = [2,5,1,12,7,8,3,8,6,4,2,5,3,12]
 
 def modificar(lista:list):
 
-    lista_nueva = []
-
     # Borrar elmentos duplicados
-     
+    lista_nueva = list(set(lista))
+    #return print(lista_nueva)
+
+    # Ordenar la lista de mayor a menor
+    lista_nueva = sorted(lista_nueva, reverse = True)
+    return print(f"Lista ordenada de mayor a menor: {lista_nueva}")
+
+    
+    '''
     for i in lista:
         if i not in lista_nueva:
             lista_nueva.append(i)
     print(f"Lista con elementos duplicados eliminados: {lista_nueva}")
-
+    '''
 modificar(lista)

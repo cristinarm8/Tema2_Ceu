@@ -21,11 +21,10 @@ for i in texto_separado:
     print(mayuscula, end = "\n")
     #print(texto_separado[i])
 
+
 # Poner primera letra de cada frase en mayúscula.
 #mayuscula = [i.capitalize() for i in texto_separado]
 #print(mayuscula, end = "\n")
-
-
 
 # Forma 1 eliminar #:
 
