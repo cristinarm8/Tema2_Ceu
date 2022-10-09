@@ -29,9 +29,16 @@ def modificar(lista:list):
 
     # Ordenar la lista de mayor a menor
     lista_nueva = sorted(lista_nueva, reverse = True)
-    return print(f"Lista ordenada de mayor a menor: {lista_nueva}")
+    #return print(f"Lista ordenada de mayor a menor: {lista_nueva}")
 
-    
+    # Eliminar todos los números impares
+    lista_ordenada_pares = []
+
+    for i in lista_nueva:
+        if i % 2 == 0:
+            lista_ordenada_pares.append(i)
+    return print(f"Lista con elementos pares: {lista_ordenada_pares}")
+
     '''
     for i in lista:
         if i not in lista_nueva:
