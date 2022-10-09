@@ -37,8 +37,12 @@ def modificar(lista:list):
     for i in lista_nueva:
         if i % 2 == 0:
             lista_ordenada_pares.append(i)
-    return print(f"Lista con elementos pares: {lista_ordenada_pares}")
+    print(f"Lista con elementos pares: {lista_ordenada_pares}")
 
+    # Realizar una suma de todos los números que quedan.
+    suma_elementos_lista = sum(lista_ordenada_pares)
+    return print(f"La suma de los números que conforman la lista es: {suma_elementos_lista}")
+    
     '''
     for i in lista:
         if i not in lista_nueva:
