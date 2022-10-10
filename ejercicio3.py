@@ -29,7 +29,7 @@ def modificar(lista:list):
 
     # Ordenar la lista de mayor a menor
     lista_nueva = sorted(lista_nueva, reverse = True)
-    #return print(f"Lista ordenada de mayor a menor: {lista_nueva}")
+    print(f"Lista ordenada de mayor a menor: {lista_nueva}")
 
     # Eliminar todos los números impares
     lista_ordenada_pares = []
@@ -47,7 +47,7 @@ def modificar(lista:list):
     lista_ordenada_pares= [suma_elementos_lista] + lista_ordenada_pares
     
     # Devolver la lista modificada.
-    print(f"La suma está en la primera posición: {lista_ordenada_pares}")
+    return lista_ordenada_pares
     
     # Comprobar que la suma de todos los números a partir del segundo, concuerda con el primer elemento de la lista.
 lista_ordenada_pares = modificar(lista)
