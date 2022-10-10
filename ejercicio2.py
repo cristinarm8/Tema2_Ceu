@@ -21,8 +21,9 @@ for i in texto_separado:
     mayuscula = i.capitalize()
     print(mayuscula, end = "\n")
 
+
 t = ["-" + i for i in texto_separado[1:]]
-print(t)
+print(t, end = "\n")
 
 
     #print(texto_separado[i])
