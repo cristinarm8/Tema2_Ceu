@@ -35,7 +35,7 @@ p1 = Punto(2,3)
 print(p1)
 p1.cuadrante()
 
-p2 = Punto(1,4)
+p2 = Punto(1,-4)
 print(p2)
 p2.cuadrante()
     
