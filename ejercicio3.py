@@ -41,11 +41,11 @@ def modificar(lista:list):
 
     # Realizar una suma de todos los números que quedan.
     suma_elementos_lista = sum(lista_ordenada_pares)
-    return print(f"La suma de los números que conforman la lista es: {suma_elementos_lista}")
+    print(f"La suma de los números que conforman la lista es: {suma_elementos_lista}")
 
     # Añadir como primer elemento la lista de la suma realizada.
-    
-
+    lista_ordenada_pares= [suma_elementos_lista] + lista_ordenada_pares
+    return print(f"La suma está en la primera posición: {lista_ordenada_pares}")
     '''
     for i in lista:
         if i not in lista_nueva:
