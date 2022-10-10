@@ -14,12 +14,12 @@ class Punto:
                 if self.y > 0:
                     print(f"El punto ({self.x},{self.y}) pertenece al I cuadrante")
                 else:
-                    print(f"El punto ({self.x}, {self.y}) pertenece al IV cuadrante")
+                    print("El punto ({},{}) pertenece al IV cuadrante".format(self.x, self.y))
         
             elif self.y > 0:
-                print(f"El punto pertenece al II cuadrante")
+                print("El punto ({},{}) pertenece al II cuadrante".format(self.x, self.y))
             else: 
-                print(f"El punto pertenece al III cuadrante")
+                print("El punto ({},{}) pertenece al III cuadrante".format(self.x, self.y))
         
         elif self.x != 0 and self.y == 0:
             print(f"El punto está en el eje X")
