@@ -25,7 +25,7 @@ def modificar(lista:list):
 
     # Borrar elmentos duplicados
     lista_nueva = list(set(lista))
-    print(f"La lista nueva con los elementos duplicados eliminados: {lista_nueva}")
+    print(f"Lista nueva con los elementos duplicados eliminados: {lista_nueva}")
 
     # Ordenar la lista de mayor a menor
     lista_nueva = sorted(lista_nueva, reverse = True)
