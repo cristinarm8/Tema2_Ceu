@@ -25,7 +25,7 @@ def modificar(lista:list):
 
     # Borrar elmentos duplicados
     lista_nueva = list(set(lista))
-    #return print(lista_nueva)
+    print(f"La lista nueva con los elementos duplicados eliminados: {lista_nueva}")
 
     # Ordenar la lista de mayor a menor
     lista_nueva = sorted(lista_nueva, reverse = True)
@@ -36,7 +36,7 @@ def modificar(lista:list):
 
     for i in lista_nueva:
         if i % 2 == 0:
-            lista_ordenada_pares.append(i)
+            lista_ordenada_pares.append(i) # Añadir elemento sólo si es par. Así no incluyes los impares en tu nueva lista.
     print(f"Lista con elementos pares: {lista_ordenada_pares}")
 
     # Realizar una suma de todos los números que quedan.
