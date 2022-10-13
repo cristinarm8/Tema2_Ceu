@@ -31,6 +31,13 @@ class Punto:
             print(f"El punto está en el origen")
 
 
+    def vector(self, pto_nuevo):
+        nueva_x = self.x - pto_nuevo.x
+        nueva_y = self.y - pto_nuevo.y
+
+        return Punto(nueva_x, nueva_y)        
+
+
 p1 = Punto(2,3)
 print(p1)
 p1.cuadrante()
@@ -38,4 +45,8 @@ p1.cuadrante()
 p2 = Punto(1,-4)
 print(p2)
 p2.cuadrante()
+
+nuevo_vector = p2.vector(p1)
+print(f"El nuevo vector es {nuevo_vector}")
+
     

@@ -17,9 +17,14 @@ texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella ban
 texto_separado = texto.split("#")
 texto_separado[0] += "..."
 
-for i in texto_separado:
-    mayuscula = i.capitalize()
-    print(mayuscula, end = "\n")
+mayuscula = [i.capitalize() for i in texto_separado]
+
+for i in range(len(texto_separado)):
+
+    if i == 0:
+        texto_separado[0] += "..."
+        #mayuscula = i.capitalize()
+        #print(mayuscula, end = "\n")
 
 
 t = ["-" + i for i in texto_separado[1:]]
