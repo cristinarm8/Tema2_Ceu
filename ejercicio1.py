@@ -45,10 +45,10 @@ class Punto:
         #return math.sqrt((self.x)**2 + (self.y)**2)
 
     def distancia(self, pto_nuevo):
-        x_distancia = (pto_nuevo.x - self.x) **2 # Resto la x del punto nuevo con la x del punto incial.
-        y_distancia = (pto_nuevo.y - self.y) **2 # Resto la y del punto nuevo con la y del punto inicial.
+        #x_distancia = (pto_nuevo.x - self.x) **2 # Resto la x del punto nuevo con la x del punto incial.
+        #y_distancia = (pto_nuevo.y - self.y) **2 # Resto la y del punto nuevo con la y del punto inicial.
 
-        return sqrt(x_distancia + y_distancia) # Sumo los cuadrados y hago la raíz de todo ello.
+        return sqrt(((pto_nuevo.x - self.x)**2) + ((pto_nuevo.y- self.y)**2)) # Sumo los cuadrados y hago la raíz de todo ello.
 
 
 p1 = Punto(2,3)
