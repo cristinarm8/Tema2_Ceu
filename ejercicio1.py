@@ -1,3 +1,7 @@
+#import math
+
+from math import *
+
 class Punto:
 
     # Método constructor. Si no se recibe coordenada parámetro por defecto 0.
@@ -35,18 +39,30 @@ class Punto:
         nueva_x = self.x - pto_nuevo.x
         nueva_y = self.y - pto_nuevo.y
 
-        return Punto(nueva_x, nueva_y)        
+        return Punto(nueva_x, nueva_y)   
+
+    #def longitud(self):
+        #return math.sqrt((self.x)**2 + (self.y)**2)
+
+    def distancia(self, pto_nuevo):
+        x_distancia = (pto_nuevo.x - self.x) **2 # Resto la x del punto nuevo con la x del punto incial.
+        y_distancia = (pto_nuevo.y - self.y) **2 # Resto la y del punto nuevo con la y del punto inicial.
+
+        return sqrt(x_distancia + y_distancia) # Sumo los cuadrados y hago la raíz de todo ello.
 
 
 p1 = Punto(2,3)
 print(p1)
 p1.cuadrante()
 
-p2 = Punto(1,-4)
+p2 = Punto(5,5)
 print(p2)
 p2.cuadrante()
 
 nuevo_vector = p2.vector(p1)
 print(f"El nuevo vector es {nuevo_vector}")
 
+p3 = Punto(-3,-1)
+distancia_entre_vectores = p3.distancia(p1)
+print(f"La distancia es: {distancia_entre_vectores}")
     

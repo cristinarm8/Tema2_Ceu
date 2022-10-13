@@ -13,9 +13,8 @@ Lo único prohibido es modificar directamente el texto.
 '''
 
 texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella bandolera -dijo un monje#lo que es el viento -respondió otro monje#ni las bandoleras ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
-    
-texto_separado = texto.split("#")
 
+texto_separado = texto.split("#")
 texto_mayuscula = [i.capitalize() for i in texto_separado]
 
 for i in range(len(texto_mayuscula)):
