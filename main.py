@@ -1,7 +1,8 @@
 import sys
 
-sys.path.insert(0, )
+sys.path.insert(0,"C:/Users/crisr/OneDrive/Documentos/GitHub/Tema2_Ceu")
 
+from ejercicio1 import Punto,Rectangulo
 
 A = Punto(2,3)
 print(A)
