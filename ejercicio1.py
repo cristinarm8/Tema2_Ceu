@@ -65,19 +65,22 @@ class Rectangulo:
     def area(self):
         return self.base() * self.altura()
 
-'''
+# Creación punto A
 A = Punto(2,3)
 print(A)
 A.cuadrante()
 
+# Creación punto B
 B = Punto(5,5)
 print(B)
 #B.cuadrante()
 
+# Creación punto C
 C = Punto(-3,-1)
 print(C)
 C.cuadrante()
 
+# Creación punto D
 D = Punto(0,0)
 print(D)
 D.cuadrante()
@@ -94,7 +97,12 @@ print(f"La distancia entre los puntos A y B es: {distancia_entre_puntos_AB}")
 distancia_entre_puntos_BA = B.distancia(A)
 print(f"La distancia entre los puntos B y A es: {distancia_entre_puntos_BA}")
 
+A.distancia(Punto())
 B.distancia(Punto())
+C.distancia(Punto())
 
-rectangulo = Rectangulo(A,B)
-'''
+rectangulo = Rectangulo(A,B) 
+base_rectangulo = rectangulo.base()
+altura_rectangulo = rectangulo.altura()
+area_rectangulo = rectangulo.area()
+
