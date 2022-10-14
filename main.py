@@ -1,6 +1,6 @@
-import sys
+#import sys
 
-sys.path.insert(0,"C:/Users/crisr/OneDrive/Documentos/GitHub/Tema2_Ceu")
+#sys.path.insert(0,"C:/Users/crisr/OneDrive/Documentos/GitHub/Tema2_Ceu")
 
 from ejercicio1 import Punto,Rectangulo
 
@@ -56,6 +56,6 @@ if __name__ == "__main__":
 
     # Creación área
     area_rectangulo = Rectangulo.area()
-    
+
 
 

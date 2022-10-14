@@ -53,12 +53,12 @@ class Punto:
 class Rectangulo:
 
     def __init__(self, p_inicial = Punto(), p_final = Punto()):
-        self.p_inial = p_inicial
+        self.p_inicial = p_inicial
         self.p_final = p_final
 
     def base(self):
         return abs(self.p_final.x - self.p_incial.x)
-        
+
     
     def altura(self):
         return abs(self.p_final.y - self.p_inial.y)
