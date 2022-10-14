@@ -55,12 +55,12 @@ if __name__ == "__main__":
 
     # Creación base 
     base_rectangulo = rectangulo.base()
-
+    print(f"La base del rectángulo es: {base_rectangulo}")
     # Creación altura
     altura_rectangulo = rectangulo.altura()
-
+    print(f"La altura del rectángulo es: {altura_rectangulo}")
     # Creación área
     area_rectangulo = rectangulo.area()
-
+    print(f"El área del rectángulo es: {area_rectangulo}")
 
 
