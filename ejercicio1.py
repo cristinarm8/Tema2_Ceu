@@ -52,7 +52,7 @@ class Punto:
 
 class Rectangulo:
 
-    def __init__(self, p_inicial, p_final):
+    def __init__(self, p_inicial = Punto(), p_final = Punto()):
         self.p_inial = p_inicial
         self.p_final = p_final
 

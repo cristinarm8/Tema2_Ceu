@@ -8,23 +8,28 @@ Un día que el viento soplaba con fuerza...
 - Mira como se mueve aquella banderola -dijo un monje.
 - Lo que se mueve es el viento -respondió otro monje.
 - Ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro.
+
 Lo único prohibido es modificar directamente el texto.
 
 '''
 
+def aux_formatear_texto(texto_mayuscula, i):
+    #print(len(texto_mayuscula))
+    if i == len(texto_mayuscula) -1:
+        return "- " + texto_mayuscula[i][:] + ".\n"  
+    else:
+        return "- " + texto_mayuscula[i][:] + ".\n" + aux_formatear_texto(texto_mayuscula, i+1)
+
+def formatear_texto(texto):   
+    texto_separado = texto.split("#")
+    texto_mayuscula = [i.capitalize() for i in texto_separado]
+    texto_mayuscula[0] += "...\n"
+    return texto_mayuscula[0] + aux_formatear_texto(texto_mayuscula,1)
+    
 texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella bandolera -dijo un monje#lo que es el viento -respondió otro monje#ni las bandoleras ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
 
-texto_separado = texto.split("#")
-texto_mayuscula = [i.capitalize() for i in texto_separado]
-
-for i in range(len(texto_mayuscula)):
-
-    if i == 0:
-        texto_mayuscula[0] += "..."
-        #print(texto_mayuscula, end = "\n")
-    else:
-        texto_mayuscula[i] = "- " + texto_mayuscula[i][0:] + "."    
-    print(texto_mayuscula[i])
+print(formatear_texto(texto))      
+    
     
 
 #t = ["-" + i for i in texto_separado[1:]]
