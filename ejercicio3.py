@@ -64,11 +64,14 @@ class Modificar:
     def borrar_duplicados(self):
         return list(set(self.lista))
 
+    def ordenar_lista(self):
+        return sorted(self.borrar_duplicados(), reverse = True)
 
 lista = [2,5,1,12,7,8,6,4,2,5,3,12]
 
 lista_final = Modificar(lista)
 print(f"Lista: {lista_final.borrar_duplicados()}")
+print(f"Lista ordenados:{lista_final.ordenar_lista()}")
 
 
 
