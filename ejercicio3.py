@@ -18,7 +18,7 @@ Recordatorio
 La función sum(lista) devuelve una suma de los elementos de una lista.
 
 '''
-
+'''
 lista = [2,5,1,12,7,8,3,8,6,4,2,5,3,12]
 
 def modificar(lista:list):
@@ -53,4 +53,27 @@ def modificar(lista:list):
 lista_ordenada_pares = modificar(lista)
 print(lista_ordenada_pares[0] == sum(lista_ordenada_pares[1:]))
     
+'''
+# Ejercicio realizado con clases:
+
+class Modificar:
+
+    def __init__(self, lista):
+        self.lista = lista
+
+    def borrar_duplicados(self):
+        lista_nueva = list(set(self.lista))
+        return lista_nueva
+
+
+
+
+lista = [2,5,1,12,7,8,6,4,2,5,3,12]
+
+lista_final = Modificar(lista)
+print(f"Lista: {lista_final.borrar_duplicados()}")
+
+
+
+
 
