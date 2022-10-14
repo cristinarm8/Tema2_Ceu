@@ -50,7 +50,13 @@ class Punto:
 
         return sqrt(((pto_nuevo.x - self.x)**2) + ((pto_nuevo.y- self.y)**2)) # Sumo los cuadrados y hago la raíz de todo ello.
 
+class Rectangulo:
 
+    def __init__(self, p_inicial, p_final):
+        self.p_inial = p_inicial
+        self.p_final = p_final
+
+        
 p1 = Punto(2,3)
 print(p1)
 p1.cuadrante()
