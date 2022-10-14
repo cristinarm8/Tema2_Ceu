@@ -66,6 +66,7 @@ class Rectangulo:
     def area(self):
         return self.base() * self.altura()
 
+'''
 # Creación punto A
 A = Punto(2,3)
 print(A)
@@ -107,3 +108,4 @@ base_rectangulo = rectangulo.base()
 altura_rectangulo = rectangulo.altura()
 area_rectangulo = rectangulo.area()
 
+'''

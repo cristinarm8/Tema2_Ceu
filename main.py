@@ -49,13 +49,13 @@ if __name__ == "__main__":
     rectangulo = Rectangulo(A,B)
 
     # Creación base
-    base_rectangulo = Rectangulo.base()
+    base_rectangulo = rectangulo.base()
 
     # Creación altura
-    altura_rectangulo = Rectangulo.altura()
+    altura_rectangulo = rectangulo.altura()
 
     # Creación área
-    area_rectangulo = Rectangulo.area()
+    area_rectangulo = rectangulo.area()
 
 
 
