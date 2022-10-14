@@ -53,11 +53,4 @@ def modificar(lista:list):
 lista_ordenada_pares = modificar(lista)
 print(lista_ordenada_pares[0] == sum(lista_ordenada_pares[1:]))
     
-    
-'''
-    for i in lista:
-        if i not in lista_nueva:
-            lista_nueva.append(i)
-    print(f"Lista con elementos duplicados eliminados: {lista_nueva}")
- '''
 

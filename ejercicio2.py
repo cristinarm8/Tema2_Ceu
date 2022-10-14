@@ -13,7 +13,7 @@ Lo único prohibido es modificar directamente el texto.
 
 '''
 
-def aux_formatear_texto(texto_mayuscula, i):
+def aux_formatear_texto(texto_mayuscula, i): 
     #print(len(texto_mayuscula))
     if i == len(texto_mayuscula) -1:
         return "- " + texto_mayuscula[i][:] + ".\n"  
@@ -30,11 +30,9 @@ texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella ban
 
 print(formatear_texto(texto))      
     
-    
 
 #t = ["-" + i for i in texto_separado[1:]]
 #print(t, end = "\n")
-
 
     #print(texto_separado[i])
 

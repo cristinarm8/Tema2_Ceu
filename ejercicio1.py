@@ -56,7 +56,10 @@ class Rectangulo:
         self.p_inial = p_inicial
         self.p_final = p_final
 
-        
+    def base(self):
+        return (self.p_final.x - self.p_incial.x)
+    
+         
 p1 = Punto(2,3)
 print(p1)
 p1.cuadrante()
