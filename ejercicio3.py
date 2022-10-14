@@ -62,10 +62,7 @@ class Modificar:
         self.lista = lista
 
     def borrar_duplicados(self):
-        lista_nueva = list(set(self.lista))
-        return lista_nueva
-
-
+        return list(set(self.lista))
 
 
 lista = [2,5,1,12,7,8,6,4,2,5,3,12]
