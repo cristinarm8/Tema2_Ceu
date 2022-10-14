@@ -27,13 +27,13 @@ class Punto:
                 print("El punto ({},{}) pertenece al III cuadrante".format(self.x, self.y))
         
         elif self.x != 0 and self.y == 0:
-            print(f"El punto está en el eje X")
+            print("El punto ({},{}) está en el eje X".format(self.x, self.y))
         
         elif self.x == 0 and self.y != 0:
-            print(f"El punto está en el eje Y")
+            print("El punto ({},{}) está en el eje Y".format(self.x, self.y))
 
         else:
-            print(f"El punto está en el origen")
+            print("El punto ({},{}) está en el origen".format(self.x, self.y))
 
 
     def vector(self, pto_nuevo):

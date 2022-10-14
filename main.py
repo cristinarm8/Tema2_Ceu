@@ -8,21 +8,24 @@ if __name__ == "__main__":
 
     # Creación punto A
     A = Punto(2,3)
-    print(A)
+    #print(A)
+    # Conocer en qué cuadrante se encuentra el punto A.
     A.cuadrante()
 
     # Creación punto B
     B = Punto(5,5)
-    print(B)
+    #print(B)
 
     # Creación punto C
     C = Punto(-3,-1)
-    print(C)
+    #print(C)
+    # Conocer en qué cuadrante se encuentra el punto C.
     C.cuadrante()
 
     # Creación punto D
     D = Punto(0,0)
-    print(D)
+    #print(D)
+    # Conocer en qué cuadrante se encuentra el punto D.
     D.cuadrante()
 
     # Vector AB
@@ -31,7 +34,7 @@ if __name__ == "__main__":
 
     # Vector BA
     vector_BA = B.vector(A)
-    print(f"El vector BA es el siguiente: {vector_BA}")
+    print(f"El vector BA es el siguiente:{vector_BA}")
 
     # Distancia entre los puntos A y B
     distancia_entre_puntos_AB = A.distancia(B)
@@ -41,7 +44,7 @@ if __name__ == "__main__":
     distancia_entre_puntos_BA = B.distancia(A)
     print(f"La distancia entre los puntos B y A es: {distancia_entre_puntos_BA}")
 
-    # Determina cual de los 3 puntos A,B o C, se enceuntra mñas lejos del origen, punto (0,0).
+    # Determina cual de los 3 puntos A,B o C, se encuentra más lejos del origen, punto(0,0).
     distanciaA_con_origen = A.distancia(Punto())
     #print(distanciaA_con_origen)
 
