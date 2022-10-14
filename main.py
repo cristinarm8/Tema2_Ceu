@@ -41,14 +41,19 @@ if __name__ == "__main__":
     distancia_entre_puntos_BA = B.distancia(A)
     print(f"La distancia entre los puntos B y A es: {distancia_entre_puntos_BA}")
 
-    A.distancia(Punto())
-    B.distancia(Punto())
-    C.distancia(Punto())
+    distanciaA_con_origen = A.distancia(Punto())
+    print(distanciaA_con_origen)
+
+    distanciaB_con_origen = B.distancia(Punto())
+    print(distanciaB_con_origen)
+
+    distanciaC_con_origen = C.distancia(Punto())
+    print(distanciaC_con_origen)
 
     # Creación rectángulo
     rectangulo = Rectangulo(A,B)
 
-    # Creación base
+    # Creación base 
     base_rectangulo = rectangulo.base()
 
     # Creación altura
