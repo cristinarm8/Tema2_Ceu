@@ -58,6 +58,7 @@ class Rectangulo:
 
     def base(self):
         return abs(self.p_final.x - self.p_incial.x)
+        
     
     def altura(self):
         return abs(self.p_final.y - self.p_inial.y)
