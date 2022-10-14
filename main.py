@@ -29,7 +29,7 @@ if __name__ == "__main__":
     vector_AB = A.vector(B)
     print(f"El vector AB es el siguiente:{vector_AB}")
 
-    # Vcetor BA
+    # Vector BA
     vector_BA = B.vector(A)
     print(f"El vector BA es el siguiente: {vector_BA}")
 
@@ -41,15 +41,28 @@ if __name__ == "__main__":
     distancia_entre_puntos_BA = B.distancia(A)
     print(f"La distancia entre los puntos B y A es: {distancia_entre_puntos_BA}")
 
+    # Determina cual de los 3 puntos A,B o C, se enceuntra mñas lejos del origen, punto (0,0).
     distanciaA_con_origen = A.distancia(Punto())
-    print(distanciaA_con_origen)
+    #print(distanciaA_con_origen)
 
     distanciaB_con_origen = B.distancia(Punto())
-    print(distanciaB_con_origen)
+    #print(distanciaB_con_origen)
 
     distanciaC_con_origen = C.distancia(Punto())
-    print(distanciaC_con_origen)
+    #print(distanciaC_con_origen)
 
+    distancia_origen = max(distanciaA_con_origen, distanciaB_con_origen, distanciaC_con_origen)
+    #print(distancia_origen)
+
+    if distanciaA_con_origen == distancia_origen:
+        print(f"El punto A es el que se encuentra más lejos del origen, a una distancia de {distanciaA_con_origen}")
+
+    elif distanciaB_con_origen == distanciaB_con_origen:
+        print(f"El punto B es el que se encuentra más lejos del origen, a una distancia de {distanciaB_con_origen}")
+
+    else:
+        print(f"El punto C es el que se encuentra más lejos del origen, a una distancia de {distanciaC_con_origen}")
+    
     # Creación rectángulo
     rectangulo = Rectangulo(A,B)
 
