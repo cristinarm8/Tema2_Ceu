@@ -57,11 +57,11 @@ class Rectangulo:
         self.p_final = p_final
 
     def base(self):
-        return abs(self.p_final.x - self.p_incial.x)
+        return abs(self.p_final.x - self.p_inicial.x)
 
     
     def altura(self):
-        return abs(self.p_final.y - self.p_inial.y)
+        return abs(self.p_final.y - self.p_inicial.y)
 
     def area(self):
         return self.base() * self.altura()
