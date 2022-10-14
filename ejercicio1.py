@@ -9,6 +9,7 @@ class Punto:
         self.x = x_inicial
         self.y = y_inicial
     
+    # Método str
     def __str__(self):
         return ("({},{})".format(self.x, self.y))
 
@@ -36,10 +37,9 @@ class Punto:
 
 
     def vector(self, pto_nuevo):
-        nueva_x = self.x - pto_nuevo.x
-        nueva_y = self.y - pto_nuevo.y
-
-        return Punto(nueva_x, nueva_y)   
+        #nueva_x = self.x - pto_nuevo.x
+        #nueva_y = self.y - pto_nuevo.y
+        return Punto((self.x - pto_nuevo.x), (self.y - pto_nuevo.y))   
 
     #def longitud(self):
         #return math.sqrt((self.x)**2 + (self.y)**2)
@@ -58,7 +58,6 @@ class Rectangulo:
 
     def base(self):
         return abs(self.p_final.x - self.p_inicial.x)
-
     
     def altura(self):
         return abs(self.p_final.y - self.p_inicial.y)
