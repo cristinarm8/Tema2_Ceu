@@ -82,9 +82,15 @@ D = Punto(0,0)
 print(D)
 D.cuadrante()
 
-nuevo_vector = B.vector(A)
-print(f"El nuevo vector es {nuevo_vector}")
+vector_AB = A.vector(B)
+print(f"El vector A_B es el siguiente: {vector_AB}")
 
-distancia_entre_vectores = C.distancia(A)
-print(f"La distancia es: {distancia_entre_vectores}")
+vector_BA = B.vector(A)
+print(f"El vector BA es el siguiente: {vector_BA}")
+
+distancia_entre_puntos_AB = A.distancia(B)
+print(f"La distancia entre los puntos A y B es: {distancia_entre_puntos_AB}")
+
+distancia_entre_puntos_BA = B.distancia(A)
+print(f"la distancia entre los puntos B y A es: {distancia_entre_puntos_BA}")
     
