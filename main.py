@@ -51,4 +51,11 @@ if __name__ == "__main__":
     # Creación base
     base_rectangulo = Rectangulo.base()
 
+    # Creación altura
+    altura_rectangulo = Rectangulo.altura()
+
+    # Creación área
+    area_rectangulo = Rectangulo.area()
+    
+
 
