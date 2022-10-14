@@ -60,9 +60,12 @@ class Rectangulo:
         return abs(self.p_final.x - self.p_incial.x)
     
     def altura(self):
-        return(self.p_final.y - self.p_inial.y)
+        return abs(self.p_final.y - self.p_inial.y)
 
-     
+    def area(self):
+        return self.base() * self.altura()
+
+
 p1 = Punto(2,3)
 print(p1)
 p1.cuadrante()
