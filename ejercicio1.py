@@ -66,18 +66,25 @@ class Rectangulo:
         return self.base() * self.altura()
 
 
-p1 = Punto(2,3)
-print(p1)
-p1.cuadrante()
+A = Punto(2,3)
+print(A)
+A.cuadrante()
 
-p2 = Punto(5,5)
-print(p2)
-p2.cuadrante()
+B = Punto(5,5)
+print(B)
+#B.cuadrante()
 
-nuevo_vector = p2.vector(p1)
+C = Punto(-3,-1)
+print(C)
+C.cuadrante()
+
+D = Punto(0,0)
+print(D)
+D.cuadrante()
+
+nuevo_vector = B.vector(A)
 print(f"El nuevo vector es {nuevo_vector}")
 
-p3 = Punto(-3,-1)
-distancia_entre_vectores = p3.distancia(p1)
+distancia_entre_vectores = C.distancia(A)
 print(f"La distancia es: {distancia_entre_vectores}")
     
