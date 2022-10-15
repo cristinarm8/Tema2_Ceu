@@ -12,7 +12,7 @@ Un día que el viento soplaba con fuerza...
 Lo único prohibido es modificar directamente el texto.
 
 '''
-
+# Función auxiliar para formatear las tres últimas frases del texto.
 def aux_formatear_texto(texto_mayuscula, i): 
     #print(len(texto_mayuscula))
     if i == len(texto_mayuscula) -1:
@@ -29,11 +29,12 @@ def formatear_texto(texto):
     # A la primera frase que se encuentra en la posición 0 de nuestro texto le añadimos tres puntos.
     texto_mayuscula[0] += "...\n"
     # Nos devuelve la primera frase del texto con la letra mayúscula y los tres puntos al final y le añadimos el resto del texto ya formateado con la función auxiliar.
-    return texto_mayuscula[0] + aux_formatear_texto(texto_mayuscula,1,)
+    return texto_mayuscula[0] + aux_formatear_texto(texto_mayuscula,1)
 
 texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella bandolera -dijo un monje#lo que es el viento -respondió otro monje#ni las bandoleras ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
 
-print(formatear_texto(texto,"\n"))    
+# Imprimimos por pantalla el texto formateado.
+print(formatear_texto(texto))    
     
 
 #t = ["-" + i for i in texto_separado[1:]]
