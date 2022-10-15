@@ -12,29 +12,35 @@ Un día que el viento soplaba con fuerza...
 Lo único prohibido es modificar directamente el texto.
 
 '''
-
+'''
 def aux_formatear_texto(texto_mayuscula, i): 
     #print(len(texto_mayuscula))
     if i == len(texto_mayuscula) -1:
         return "- " + texto_mayuscula[i][:] + ".\n"  
     else:
         return "- " + texto_mayuscula[i][:] + ".\n" + aux_formatear_texto(texto_mayuscula, i+1)
+'''
 
 def formatear_texto(texto):   
     texto_separado = texto.split("#")
     texto_mayuscula = [i.capitalize() for i in texto_separado]
     texto_mayuscula[0] += "...\n"
-    return texto_mayuscula[0] + aux_formatear_texto(texto_mayuscula,1)
-    
+    return print(texto_mayuscula[0] + aux_formatear_texto(texto_mayuscula,1))
+
+
+def aux_formatear_texto(texto_mayuscula, i):
+    if i == (len(texto_mayuscula)-1):
+        return print("- " + texto_mayuscula[i][:] + ".")
+    else:
+        return print("- " + texto_mayuscula[i][:] + "." + aux_formatear_texto(texto_mayuscula, i + 1))
+ 
 texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella bandolera -dijo un monje#lo que es el viento -respondió otro monje#ni las bandoleras ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
 
-print(formatear_texto(texto))      
+formatear_texto(texto)     
     
 
 #t = ["-" + i for i in texto_separado[1:]]
 #print(t, end = "\n")
-
-    #print(texto_separado[i])
 
 # Poner primera letra de cada frase en mayúscula.
 #mayuscula = [i.capitalize() for i in texto_separado]
