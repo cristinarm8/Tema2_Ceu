@@ -75,12 +75,17 @@ class Modificar:
                 lista_ordenada_pares.append(i)
         return lista_ordenada_pares
 
+    def sumar_elementos_lista(self):
+        return sum(self.eliminar_num_impares())
+
+
 lista = [2,5,1,12,7,8,6,4,2,5,3,12]
 
 lista_final = Modificar(lista)
 print(f"Lista: {lista_final.borrar_duplicados()}")
 print(f"Lista ordenados:{lista_final.ordenar_lista()}")
 print(f"Lista sin impares: {lista_final.eliminar_num_impares()}")
+print(f"Suma de los números que conforman la lista: {lista_final.sumar_elementos_lista()}")
 
 
 
