@@ -67,11 +67,20 @@ class Modificar:
     def ordenar_lista(self):
         return sorted(self.borrar_duplicados(), reverse = True)
 
+    def eliminar_num_impares(self):
+        lista_ordenada_pares = []
+
+        for i in self.ordenar_lista():
+            if i % 2 == 0:
+                lista_ordenada_pares.append(i)
+        return lista_ordenada_pares
+
 lista = [2,5,1,12,7,8,6,4,2,5,3,12]
 
 lista_final = Modificar(lista)
 print(f"Lista: {lista_final.borrar_duplicados()}")
 print(f"Lista ordenados:{lista_final.ordenar_lista()}")
+print(f"Lista sin impares: {lista_final.eliminar_num_impares()}")
 
 
 
