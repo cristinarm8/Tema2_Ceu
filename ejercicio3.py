@@ -95,11 +95,11 @@ lista = [2,5,1,12,7,8,6,4,2,5,3,12]
 # Creación de un objeto / instancia de clase.
 lista_final = Modificar(lista)
 
-print(f"Lista: {lista_final.borrar_duplicados()}")
-print(f"Lista ordenados:{lista_final.ordenar_lista()}")
+print(f"Lista nueva con los elementos duplicados: {lista_final.borrar_duplicados()}")
+print(f"Lista con elementos ordenados de mayor a menor: {lista_final.ordenar_lista()}")
 print(f"Lista sin impares: {lista_final.eliminar_num_impares()}")
 print(f"Suma de los números que conforman la lista: {lista_final.sumar_elementos_lista()}")
-print(f"Lista con suma al inicio: {lista_final.añadir_elemento_lista()}")
+print(f"Lista con el resultado de la suma como primer elemento: {lista_final.añadir_elemento_lista()}")
 
 # Comprobación que la suma de todos los números a partir del segundo, concuerda con el primer número de la lista.
 nueva_lista = lista_final.añadir_elemento_lista()
