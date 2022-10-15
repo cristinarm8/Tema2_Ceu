@@ -58,15 +58,19 @@ print(lista_ordenada_pares[0] == sum(lista_ordenada_pares[1:]))
 
 class Modificar:
 
+    # Método contructor.
     def __init__(self, lista):
         self.lista = lista
 
+    # Método para borrar elementos duplicados.
     def borrar_duplicados(self):
         return list(set(self.lista))
 
+    # Método para ordenar la lista de mayor a menor.
     def ordenar_lista(self):
         return sorted(self.borrar_duplicados(), reverse = True)
 
+    # Método para eliminar todos los números impares.
     def eliminar_num_impares(self):
         lista_ordenada_pares = []
 
@@ -75,22 +79,26 @@ class Modificar:
                 lista_ordenada_pares.append(i)
         return lista_ordenada_pares
 
+    # Método para realizar la suma de todos los números que quedan.
     def sumar_elementos_lista(self):
         return sum(self.eliminar_num_impares())
 
-
+    # Método para añadir como primer elemento de la lista la suma realizada.
     def añadir_elemento_lista(self):
         return [self.sumar_elementos_lista()] + self.eliminar_num_impares()
 
 lista = [2,5,1,12,7,8,6,4,2,5,3,12]
 
+# Creación de un objeto / instancia de clase.
 lista_final = Modificar(lista)
+
 print(f"Lista: {lista_final.borrar_duplicados()}")
 print(f"Lista ordenados:{lista_final.ordenar_lista()}")
 print(f"Lista sin impares: {lista_final.eliminar_num_impares()}")
 print(f"Suma de los números que conforman la lista: {lista_final.sumar_elementos_lista()}")
 print(f"Lista con suma al inicio: {lista_final.añadir_elemento_lista()}")
 
+# Comprobación que la suma de todos los números a partir del segundo, concuerda con el primer número de la lista.
 nueva_lista = lista_final.añadir_elemento_lista()
 print(nueva_lista[0] == sum(nueva_lista[1:]))
 
