@@ -72,12 +72,15 @@ class Modificar:
 
     # Método para eliminar todos los números impares.
     def eliminar_num_impares(self):
+    
         lista_ordenada_pares = []
-
+        '''
         for i in self.ordenar_lista():
             if i % 2 == 0:
                 lista_ordenada_pares.append(i)
         return lista_ordenada_pares
+        '''
+        return [lista_ordenada_pares.append(i) for i in self.ordenar_lista() if i % 2 ==0]
 
     # Método para realizar la suma de todos los números que quedan.
     def sumar_elementos_lista(self):

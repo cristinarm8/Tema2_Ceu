@@ -18,15 +18,16 @@ def aux_formatear_texto(texto_mayuscula, i):
     if i == len(texto_mayuscula) -1:
         return "- " + texto_mayuscula[i] + ".\n"  
     else:
+        # Aplicamos recursividad llamando a la propia función, a la que le pasamos el parámetro + 1 para que vaya avanzando.
         return "- " + texto_mayuscula[i] + ".\n" + aux_formatear_texto(texto_mayuscula, i+1)
 
 # Función principal para formatear el texto.
 def formatear_texto(texto):   
-    # Método split para convertir una cadena en uns lista, utilizando un separador en este caso #. 
+    # Método split para formatear lista, convierte una cadena en una lista utilizando un separador en este caso #. 
     texto_separado = texto.split("#") 
-    # Método capitalize() nos permite tranformar la primera letra en mayúscula.
+    # Método capitalize() nos permite transformar la primera letra en mayúscula.
     texto_mayuscula = [i.capitalize() for i in texto_separado] 
-    # A la primera frase que se encuentra en la posición 0 de nuestro texto le añadimos tres puntos.
+    # A la primera frase que se encuentra en la posición 0 le añadimos tres puntos.
     texto_mayuscula[0] += "...\n"
     # Nos devuelve la primera frase del texto (con letra mayúscula y tres puntos al final) + el resto del texto ya formateado con la función auxiliar.
     return texto_mayuscula[0] + aux_formatear_texto(texto_mayuscula,1)
