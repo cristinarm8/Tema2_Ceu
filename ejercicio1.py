@@ -139,8 +139,15 @@ elif distanciaB_con_origen == distancia_origen:
 else:
     print(f"El punto C es el que se encuentra más lejos del origen, a una distancia de {distanciaC_con_origen}")
 
+# Creación rectángulo
 rectangulo = Rectangulo(A,B) 
-base_rectangulo = rectangulo.base()
-altura_rectangulo = rectangulo.altura()
-area_rectangulo = rectangulo.area()
 
+# Creción base
+base_rectangulo = rectangulo.base()
+print(f"La base del rectángulo es: {base_rectangulo}")
+# Creación altura
+altura_rectangulo = rectangulo.altura()
+print(f"La altura del rectángulo es: {altura_rectangulo}")
+# Creación área
+area_rectangulo = rectangulo.area()
+print(f"El área del rectángulo es: {area_rectangulo}")
