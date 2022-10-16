@@ -42,6 +42,7 @@ print(formatear_texto(texto))
 
 
 
+
 # Añadir guión en las tres últimas líneas con comprensiones de listas.
 #t = ["-" + i for i in texto_separado[1:]]
 #print(t, end = "\n")
