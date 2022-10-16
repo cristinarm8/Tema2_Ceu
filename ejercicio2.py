@@ -50,15 +50,9 @@ print(formatear_texto(texto))
 #mayuscula = [i.capitalize() for i in texto_separado]
 #print(mayuscula, end = "\n")
 
-# Forma 1 eliminar #:
-
+# Forma eliminar #:
 # caracter_eliminar = "#"
 #texto = "".join(x for x in texto if x not in caracter_eliminar)
 #print(texto)
 
-# Forma 2 eliminar #:
-
-#for x in range(len(caracter_eliminar)):
-    #texto = texto.replace(caracter_eliminar[x], "")
-#print(texto)
 
