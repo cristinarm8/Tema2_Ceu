@@ -1,30 +1,27 @@
+# Si quisiera utilizar funciones de un archivo que se localiza en otra carpeta.
 #import sys
-
 #sys.path.insert(0,"C:/Users/crisr/OneDrive/Documentos/GitHub/Tema2_Ceu")
 
-from ejercicio1 import Punto,Rectangulo
+# Del ejercicio 1 importo las clases Punto y Rectangulo
+from ejercicio1 import Punto,Rectangulo 
 
 if __name__ == "__main__":
 
     # Creación punto A
     A = Punto(2,3)
-    #print(A)
     # Conocer en qué cuadrante se encuentra el punto A.
     A.cuadrante()
 
     # Creación punto B
     B = Punto(5,5)
-    #print(B)
-
+    
     # Creación punto C
     C = Punto(-3,-1)
-    #print(C)
     # Conocer en qué cuadrante se encuentra el punto C.
     C.cuadrante()
 
     # Creación punto D
     D = Punto(0,0)
-    #print(D)
     # Conocer en qué cuadrante se encuentra el punto D.
     D.cuadrante()
 

@@ -1,5 +1,8 @@
-#import math
+# Si quisiera utilizar funciones de un archivo que se localiza en otra carpeta.
+# import sys
+# sys.path.insert(0, direccion_de_carpeta)
 
+#import math
 from math import *
 
 class Punto:
@@ -42,13 +45,19 @@ class Punto:
     def vector(self, pto_nuevo):
         #nueva_x = self.x - pto_nuevo.x
         #nueva_y = self.y - pto_nuevo.y
-        return Punto((self.x - pto_nuevo.x), (self.y - pto_nuevo.y)) 
-        #return ("Vector ({})".format(vector_xy))  
-
-    #def longitud(self):
-        #return math.sqrt((self.x)**2 + (self.y)**2)
+        return Punto((self.x - pto_nuevo.x), (self.y - pto_nuevo.y))   
 
     # Método distancia, que tome otro punto y calcule la distancia entre los dos puntos.
+
+    # Opción 1:
+
+    #def longitud(self):
+        #return sqrt((self.x)**2 + (self.y)**2)
+    
+    #def distancia(self, pto_nuevo):
+        #return self.vector(pto_nuevo).longitud
+
+    # Opción 2:
     def distancia(self, pto_nuevo):
         #x_distancia = (pto_nuevo.x - self.x) **2 # Resto la x del punto nuevo con la x del punto incial.
         #y_distancia = (pto_nuevo.y - self.y) **2 # Resto la y del punto nuevo con la y del punto inicial.
