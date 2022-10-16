@@ -85,19 +85,23 @@ class Rectangulo:
 
 # Creación punto A
 A = Punto(2,3)
+print(f"El punto A está formado por las siguiente coordenadas: {A}")
 # Conocer en qué cuadrante se encuentra el punto A.
 A.cuadrante()
 
 # Creación punto B
 B = Punto(5,5)
+print(f"El punto B está formado por las siguiente coordenadas: {B}")
 
 # Creación punto C
 C = Punto(-3,-1)
+print(f"El punto C está formado por las siguientes coordenadas: {C}")
 # Conocer en qué cuadrante se encuentra el punto C.
 C.cuadrante()
 
 # Creación punto D
 D = Punto(0,0)
+print(f"El punto D está formado por las siguientes coordenadas: {D}")
 # Conocer en qué cuadrante se encuentra el punto D.
 D.cuadrante()
 
