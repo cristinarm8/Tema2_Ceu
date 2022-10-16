@@ -82,25 +82,23 @@ class Rectangulo:
     def area(self):
         return self.base() * self.altura()
 
-'''
+
 # Creación punto A
 A = Punto(2,3)
-print(A)
+# Conocer en qué cuadrante se encuentra el punto A.
 A.cuadrante()
 
 # Creación punto B
 B = Punto(5,5)
-print(B)
-#B.cuadrante()
 
 # Creación punto C
 C = Punto(-3,-1)
-print(C)
+# Conocer en qué cuadrante se encuentra el punto C.
 C.cuadrante()
 
 # Creación punto D
 D = Punto(0,0)
-print(D)
+# Conocer en qué cuadrante se encuentra el punto D.
 D.cuadrante()
 
 vector_AB = A.vector(B)
@@ -124,4 +122,3 @@ base_rectangulo = rectangulo.base()
 altura_rectangulo = rectangulo.altura()
 area_rectangulo = rectangulo.area()
 
-'''

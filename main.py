@@ -2,7 +2,7 @@
 #import sys
 #sys.path.insert(0,"C:/Users/crisr/OneDrive/Documentos/GitHub/Tema2_Ceu")
 
-# Del archivo ejercicio1.py importo las clases Punto y Rectangulo
+# Del archivo ejercicio1 importo las clases Punto y Rectangulo
 from ejercicio1 import Punto,Rectangulo 
 
 if __name__ == "__main__":
