@@ -68,7 +68,6 @@ print(f"Suma de los números que conforman la lista: {lista_final.sumar_elemento
 print(f"Lista con el resultado de la suma como primer elemento: {lista_final.añadir_elemento_lista()}")
 
 # Comprobación que la suma de todos los números a partir del segundo, concuerda con el primer número de la lista.
-#nueva_lista = lista_final.añadir_elemento_lista()
 print(nueva_lista[0] == sum(nueva_lista[1:]))
 
 
