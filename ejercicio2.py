@@ -36,8 +36,10 @@ texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella ban
 
 # Imprimimos por pantalla el texto formateado.
 print(formatear_texto(texto))    
-    
 
+
+
+# Añadir guión en las tres últimas líneas con comprensiones de listas.
 #t = ["-" + i for i in texto_separado[1:]]
 #print(t, end = "\n")
 
