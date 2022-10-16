@@ -18,7 +18,7 @@ def aux_formatear_texto(texto_mayuscula, i):
     if i == len(texto_mayuscula) -1:
         return "- " + texto_mayuscula[i] + ".\n"  
     else:
-        # Aplicamos recursividad llamando a la propia función, a la que le pasamos el parámetro + 1 para que vaya avanzando.
+        # Aplicamos recursividad llamando a la propia función, a la que le sumamos a i + 1 ya que hay que actualizar los parámetros de entrada.
         return "- " + texto_mayuscula[i] + ".\n" + aux_formatear_texto(texto_mayuscula, i+1)
 
 # Función principal para formatear el texto.
