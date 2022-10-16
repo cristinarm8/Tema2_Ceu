@@ -101,21 +101,31 @@ D = Punto(0,0)
 # Conocer en qué cuadrante se encuentra el punto D.
 D.cuadrante()
 
+# Vector AB
 vector_AB = A.vector(B)
 print(f"El vector AB es el siguiente:{vector_AB}")
 
+# Vector BA
 vector_BA = B.vector(A)
 print(f"El vector BA es el siguiente: {vector_BA}")
 
+# Distancia entre los puntos A y B
 distancia_entre_puntos_AB = A.distancia(B)
 print(f"La distancia entre los puntos A y B es: {distancia_entre_puntos_AB}")
 
+# Distancia entre los puntos B y A
 distancia_entre_puntos_BA = B.distancia(A)
 print(f"La distancia entre los puntos B y A es: {distancia_entre_puntos_BA}")
 
-A.distancia(Punto())
-B.distancia(Punto())
-C.distancia(Punto())
+# Determinar cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0).
+distanciaA_con_origen = A.distancia(Punto())
+#print(distanciaA_con_origen)
+
+distanciaB_con_origen = B.distancia(Punto())
+#print(distanciaB_con_origen)
+
+distanciaC_con_origen = C.distancia(Punto())
+#print(distanciaC_con_origen)
 
 rectangulo = Rectangulo(A,B) 
 base_rectangulo = rectangulo.base()
